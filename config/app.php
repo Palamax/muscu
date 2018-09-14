@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Musculation '.app()->version().' Boilerplate'),
+    'name' => env('APP_NAME', 'Musculation '.app()->version().' Gestion'),
 
     /*
     |--------------------------------------------------------------------------
