@@ -14,11 +14,13 @@
                         @endif
                     @endforeach
                 </div>
+
+                <div class="hidden" id="avatar_location">
+                    {{ html()->file('avatar_location')}}
+                </div><!--form-group-->
             </div><!--form-group-->
 
-            <div class="form-group hidden" id="avatar_location">
-                {{ html()->file('avatar_location')->class('form-control') }}
-            </div><!--form-group-->
+
         </div><!--col-->
     </div><!--row-->
 

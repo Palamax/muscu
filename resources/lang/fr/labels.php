@@ -107,6 +107,20 @@ return [
                 'view' => 'Voir un utilisateur',
             ],
         ],
+        'administration' => [
+            'machine' => [
+                'create'     => 'Créer une machine',
+                'edit'       => 'Editer une machine',
+                'management' => 'Gestion des machines',
+
+                'nom' => 'Nom',
+                'description' => 'Description',
+                'last_updated' => 'Mise à jour',
+                'active' => 'Active',
+                'statut' => 'Statut',
+                'image' => 'Image',
+            ], 
+        ],       
     ],
 
     'frontend' => [

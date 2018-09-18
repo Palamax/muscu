@@ -37,6 +37,18 @@ return [
             ],
         ],
 
+        'administration' => [
+            'title' => 'Administration',
+
+            'machines' => [
+                'all'        => 'Toutes les machines',
+                'create'     => 'Créer une machine',
+                'edit'       => 'Éditer une machine',
+                'management' => 'Gestion des machines',
+                'main'       => 'Machines',
+            ],
+        ],        
+
         'log-viewer' => [
             'main'      => 'Consulter les logs',
             'dashboard' => 'Tableau de bord',
@@ -45,6 +57,7 @@ return [
 
         'sidebar' => [
             'dashboard' => 'Tableau de bord',
+            'machines' => 'Machines',
             'general'   => 'Général',
             'history'   => 'History',
             'system'    => 'Système',

@@ -20,6 +20,12 @@ return [
             'updated' => 'Rôle mis à jour avec succès.',
         ],
 
+        'machines' => [
+            'created' => 'Machine créée avec succès.',
+            'deleted' => 'Machine supprimée avec succès.',
+            'updated' => 'Machine mise à jour avec succès.',
+        ],        
+
         'users' => [
             'cant_resend_confirmation' => "L'application est actuellement paramétrée avec une validation manuelle des utilisateurs.",
             'confirmation_email'  => "Un email de confirmation a été adressé à l'adresse indiquée.",

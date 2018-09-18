@@ -52,6 +52,11 @@ return [
                 'update_password_error' => "Un problème est survenu lors du changement du mot de passe de l'utilisateur. Veuillez réessayer.",
             ],
         ],
+        'administration' => [
+            'machines' => [
+                'update_error'      => 'Un problème est survenu lors de la mise à jour de la machine. Veuillez réessayer.',
+            ],        
+        ],   
     ],
 
     'frontend' => [

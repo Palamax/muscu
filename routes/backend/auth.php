@@ -65,3 +65,16 @@ Route::group([
         Route::resource('role', 'RoleController', ['except' => ['show']]);
     });
 });
+
+Route::group([
+    'prefix'     => 'administration',
+    'as'         => 'administration.',
+    'namespace'  => 'Administration',
+], function () {
+    /*
+     * Machine Management
+     */
+    Route::group(['namespace' => 'Machine'], function () {
+        Route::resource('machine', 'MachineController', ['except' => ['show']]);
+    });
+});

@@ -9,6 +9,11 @@
                     <i class="nav-icon icon-speedometer"></i> @lang('menus.backend.sidebar.dashboard')
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                    <i class="nav-icon icon-speedometer"></i> @lang('menus.backend.sidebar.machines')
+                </a>
+            </li>            
 
             <li class="nav-title">
                 @lang('menus.backend.sidebar.system')
