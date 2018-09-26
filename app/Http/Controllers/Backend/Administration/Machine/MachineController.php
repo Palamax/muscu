@@ -6,6 +6,7 @@ use App\Models\Administration\Machine;
 use App\Repositories\Backend\Administration\MachineRepository;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Backend\Administration\MachineRequest;
+use App\Http\Requests\Backend\Administration\MachineDetailRequest;
 
 /**
  * Class MachineController.
@@ -55,7 +56,7 @@ class MachineController extends Controller
      * @return mixed
      * @throws \App\Exceptions\GeneralException
      */
-    public function store(MachineRequest $request)
+    public function store(MachineDetailRequest $request)
     {
         $this->machineRepository->create($request->only('nom', 'description', 'image', 'active'));
 
@@ -81,9 +82,9 @@ class MachineController extends Controller
      * @return mixed
      * @throws \App\Exceptions\GeneralException
      */
-    public function update(MachineRequest $request, Machine $machine)
+    public function update(MachineDetailRequest $request, Machine $machine)
     {
-        $this->machineRepository->update($machine, $request->only('nom', 'description', 'image', 'active'));
+        $this->machineRepository->update($machine->id, $request->only('nom', 'description', 'image', 'active'), $request->has('image') ? $request->file('image') : false);
 
         return redirect()->route('admin.administration.machine.index')->withFlashSuccess(__('alerts.backend.machines.updated'));
     }

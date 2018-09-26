@@ -26,9 +26,6 @@ class MachineRequest extends FormRequest
      */
     public function rules()
     {
-/*        return [
-            'nom' => 'required|max:50',
-        ];*/
         return [
             //
         ];

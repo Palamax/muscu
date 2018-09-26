@@ -44,11 +44,7 @@
                             ->for('description') }}
 
                         <div class="col-md-10">
-                            {{ html()->text('description')
-                                ->class('form-control')
-                                ->placeholder(__('labels.backend.administration.machine.description'))
-                                ->attribute('maxlength', 191)
-                                ->required() }}
+                            <textarea class="form-control" id="description" name="description">{{ $machine->description }}</textarea>
                         </div><!--col-->        
 
                     </div><!--form-group-->
@@ -69,8 +65,22 @@
             </div><!--row-->    
         </div><!--card-body-->
 
+        <div class="row mt-4">
+            <div class="col">
+                <div class="form-group row">
+                    {{ html()->label(__('labels.backend.administration.machine.image'))
+                        ->class('col-md-2 form-control-label')
+                        ->for('image') }}
 
-
+                    <div class="col-md-10">
+                        <div id="image">
+                            {{ html()->file('image')}}
+                        </div>                        
+                    </div>  {{ $machine->image }}<!--col-->
+                </div><!--form-group-->
+            </div><!--col-->
+        </div><!--row-->
+<img class="card-img-top" src="{{ $machine->image }}" alt="Avatar">
         <div class="card-footer">
             <div class="row">
                 <div class="col">
@@ -85,3 +95,12 @@
     </div><!--card-->
 {{ html()->closeModelForm() }}
 @endsection
+
+
+
+@push('after-scripts')
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'description' );
+    </script>
+@endpush

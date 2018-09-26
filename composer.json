@@ -21,10 +21,11 @@
         "spatie/laravel-html": "^2.4",
         "spatie/laravel-permission": "^2.5",
         "torann/geoip": "^1.0",
+        "unisharp/laravel-ckeditor": "^4.7",
         "webpatser/laravel-uuid": "^3.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.0",
+        "barryvdh/laravel-debugbar": "^3.2",
         "barryvdh/laravel-ide-helper": "^2.4",
         "codedungeon/phpunit-result-printer": "^0.19.10",
         "filp/whoops": "^2.0",

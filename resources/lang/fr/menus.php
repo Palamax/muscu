@@ -47,6 +47,34 @@ return [
                 'management' => 'Gestion des machines',
                 'main'       => 'Machines',
             ],
+            'exercices' => [
+                'all'        => 'Toutes les exercices',
+                'create'     => 'Créer une exercice',
+                'edit'       => 'Éditer une exercice',
+                'management' => 'Gestion des exercices',
+                'main'       => 'Exercices',
+            ],    
+            'seances' => [
+                'all'        => 'Toutes les séances',
+                'create'     => 'Créer une séance',
+                'edit'       => 'Éditer une séance',
+                'management' => 'Gestion des séances',
+                'main'       => 'Séances',
+            ],                      
+            'programmes_sportifs' => [
+                'all'        => 'Tous les programmes sportifs',
+                'create'     => 'Créer un programme sportif',
+                'edit'       => 'Éditer un programme sportif',
+                'management' => 'Gestion des programmes sportifs',
+                'main'       => 'Programmes sportifs',
+            ],
+            'programmes_dietetiques' => [
+                'all'        => 'Tous les programmes dietetiques',
+                'create'     => 'Créer un programme dietetique',
+                'edit'       => 'Éditer un programme dietetique',
+                'management' => 'Gestion des programmes dietetiques',
+                'main'       => 'Programmes dietetiques',
+            ],                      
         ],        
 
         'log-viewer' => [
@@ -58,6 +86,10 @@ return [
         'sidebar' => [
             'dashboard' => 'Tableau de bord',
             'machines' => 'Machines',
+            'exercices' => 'Exercices',
+            'seances' => 'Séances',
+            'programmes_sportifs' => 'Programmes sportifs',
+            'programmes_dietetiques' => 'Programmes dietetiques',
             'general'   => 'Général',
             'history'   => 'History',
             'system'    => 'Système',

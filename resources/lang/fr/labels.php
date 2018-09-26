@@ -109,10 +109,11 @@ return [
         ],
         'administration' => [
             'machine' => [
+                'machines'     => 'Machines',
+                'machine'     => 'Machine',
                 'create'     => 'Créer une machine',
                 'edit'       => 'Editer une machine',
                 'management' => 'Gestion des machines',
-
                 'nom' => 'Nom',
                 'description' => 'Description',
                 'last_updated' => 'Mise à jour',

@@ -11,10 +11,29 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
-                    <i class="nav-icon icon-speedometer"></i> @lang('menus.backend.sidebar.machines')
+                    <i class="phpdebugbar-fa phpdebugbar-fa-cogs"></i> @lang('menus.backend.sidebar.machines')
                 </a>
-            </li>            
-
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                    <i class="phpdebugbar-fa phpdebugbar-fa-bolt"></i> @lang('menus.backend.sidebar.exercices')
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                    <i class="phpdebugbar-fa phpdebugbar-fa-tasks"></i> @lang('menus.backend.sidebar.seances')
+                </a>
+            </li>                                 
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                    <i class="fa fa-heartbeat"></i> @lang('menus.backend.sidebar.programmes_sportifs')
+                </a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                    <i class="phpdebugbar-fa phpdebugbar-fa-cutlery"></i> @lang('menus.backend.sidebar.programmes_dietetiques')
+                </a>
+            </li>              
             <li class="nav-title">
                 @lang('menus.backend.sidebar.system')
             </li>

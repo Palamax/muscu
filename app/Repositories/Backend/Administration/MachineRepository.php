@@ -27,19 +27,30 @@ class MachineRepository extends BaseRepository
      * @return mixed
      * @throws GeneralException
      */
-    public function update(Machine $machine, array $data)
+    public function update($id, array $data, $image = false)
     {
 
-        return DB::transaction(function () use ($machine, $data) {
+        return DB::transaction(function () use ($id, $data, $image) {
+
+            $machine = $this->getById($id);
+
             if (ISSET($data['active'])){
                 $active = 1;
             }else{
                 $active = 0;
             }
+
+            if ($image){
+                 $image_machine = $image->store('/avatars', 'public');
+            }else{
+                $image_machine = $machine->image;
+            }
+
             if ($machine->update([
                 'nom' => $data['nom'],
                 'description' => $data['description'],
                 'active' => $active,
+                'image' => $image_machine,
             ])) {
                 return $machine;
             }
