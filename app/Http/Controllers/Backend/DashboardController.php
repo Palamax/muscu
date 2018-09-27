@@ -20,8 +20,13 @@ class DashboardController extends Controller
 
 		$nbMachinesActives = DB::table('machines')->where('active', '=',  1)->get()->count();
 
+		$referentiel = file_get_contents("referentiel.json");
+		$datas = json_decode($referentiel, true);
+		$groupes_musculaires = $datas['groupes_musculaires'];
+
         return view('backend.dashboard')
         	->with('nbMachinesActives', $nbMachinesActives)
-            ->with('nbMachines', $nbMachines);
+            ->with('nbMachines', $nbMachines)
+            ->with('groupes_musculaires', $groupes_musculaires);
     }
 }

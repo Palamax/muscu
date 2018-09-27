@@ -89,5 +89,35 @@
             </div><!--card-->
         </div><!--col-->
     </div><!--row-->
-   
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Groupes musculaires</strong>
+                </div><!--card-header-->
+                <div class="card-body">
+                   <div class="row">
+                        <div>
+                            <div class="row">
+                                @foreach ($groupes_musculaires as $groupe_musculaire => $value)
+                                <div class="col-md-3 mb-3">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            {{$value["nom"]}}
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="img-avatar" src="{{$value["image"]}}">
+                                             
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach 
+                            </div>
+                        </div>
+                    </div>                      
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--col-->
+    </div><!--row-->   
 @endsection
