@@ -26,6 +26,12 @@ return [
             'updated' => 'Machine mise à jour avec succès.',
         ],        
 
+        'exercices' => [
+            'created' => 'Exercice créé avec succès.',
+            'deleted' => 'Exercice supprimé avec succès.',
+            'updated' => 'Exercice mise à jour avec succès.',
+        ],  
+
         'users' => [
             'cant_resend_confirmation' => "L'application est actuellement paramétrée avec une validation manuelle des utilisateurs.",
             'confirmation_email'  => "Un email de confirmation a été adressé à l'adresse indiquée.",

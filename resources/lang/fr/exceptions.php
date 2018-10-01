@@ -55,7 +55,10 @@ return [
         'administration' => [
             'machines' => [
                 'update_error'      => 'Un problème est survenu lors de la mise à jour de la machine. Veuillez réessayer.',
-            ],        
+            ],   
+            'exercices' => [
+                'update_error'      => 'Un problème est survenu lors de la mise à jour de l exercice. Veuillez réessayer.',
+            ],                 
         ],   
     ],
 

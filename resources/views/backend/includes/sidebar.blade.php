@@ -15,7 +15,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/exercice')) }}" href="{{ route('admin.administration.exercice.index') }}">
                     <i class="phpdebugbar-fa phpdebugbar-fa-bolt"></i> @lang('menus.backend.sidebar.exercices')
                 </a>
             </li>

@@ -8,3 +8,5 @@
 import '../bootstrap';
 import 'pace';
 import '../plugins';
+import '../bootstrap-slider.js';
+

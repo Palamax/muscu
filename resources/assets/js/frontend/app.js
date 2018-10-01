@@ -7,6 +7,7 @@
 
 import '../bootstrap';
 import '../plugins';
+import '../bootstrap-slider.js';
 import Vue from 'vue';
 
 window.Vue = Vue;

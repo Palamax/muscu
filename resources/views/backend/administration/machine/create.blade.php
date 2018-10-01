@@ -70,3 +70,10 @@
     </div><!--card-->
 {{ html()->form()->close() }}
 @endsection
+
+@push('after-scripts')
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'description' );
+    </script>
+@endpush

@@ -15,6 +15,7 @@ return [
 
     'general' => [
         'all'     => 'Tout',
+        'more'     => '...',
         'yes'     => 'Oui',
         'no'      => 'Non',
         'custom'  => 'Personnalisé',
@@ -121,6 +122,20 @@ return [
                 'statut' => 'Statut',
                 'image' => 'Image',
             ], 
+            'exercice' => [
+                'exercices'     => 'Exercices',
+                'exercice'     => 'Exercice',
+                'create'     => 'Créer un exercice',
+                'edit'       => 'Editer un exercice',
+                'management' => 'Gestion des exercices',
+                'nom' => 'Nom',
+                'description' => 'Description',
+                'nombre_series' => 'Nombre de séries',
+                'recuperation' => 'Récupération (sec)',
+                'machine' => 'Machine',
+                'groupe_musculaire' => 'Groupe musculaire',
+                'last_updated' => 'Mise à jour',
+            ],             
         ],       
     ],
 

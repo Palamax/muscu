@@ -54,18 +54,22 @@
             <div class="row mt-4">
                 <div class="col">
                     <div class="form-group row">
-   
-                        <div class="checkbox">
-                            <label>
-                                <input id="active" name="active" type="checkbox" {{ $machine->active ? 'checked' : '' }}>  Active
-                            </label>
-                        </div>
-                    </div><!--form-group-->
-                </div><!--col-->
-            </div><!--row-->    
-        </div><!--card-body-->
+                        {{ html()->label(__('validation.attributes.backend.access.users.active'))
+                        ->class('col-md-2 form-control-label')
+                        ->for('active') }}
 
-        <div class="row mt-4">
+                        <div class="col-md-10">
+                              <label class="switch switch-label switch-pill switch-primary">
+                                    {{ html()->checkbox('active', false, 0)->class('switch-input') }}
+                                    <span class="switch-slider" data-checked="1" data-unchecked="0"></span>
+                                </label>
+                        </div>       
+                    </div>
+                </div>
+            </div>             
+        </div>
+
+<!--         <div class="row mt-4">
             <div class="col">
                 <div class="form-group row">
                     {{ html()->label(__('labels.backend.administration.machine.image'))
@@ -76,11 +80,11 @@
                         <div id="image">
                             {{ html()->file('image')}}
                         </div>                        
-                    </div>  {{ $machine->image }}<!--col-->
-                </div><!--form-group-->
-            </div><!--col-->
-        </div><!--row-->
-<img class="card-img-top" src="{{ $machine->image }}" alt="Avatar">
+                    </div>  {{ $machine->image }}
+                </div>
+            </div>
+        </div>
+        <img class="card-img-top" src="{{ $machine->image }}" alt="Avatar"> -->
         <div class="card-footer">
             <div class="row">
                 <div class="col">

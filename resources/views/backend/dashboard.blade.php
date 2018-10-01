@@ -13,9 +13,9 @@
                 </div><!--card-header-->
                 <div class="card-body">
                    <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-12">
                             <div class="row">
-                               <div class="col-md-4 col-sm-6 mb-3">
+                               <div class="col-md-2 col-sm-1 mb-1">
                                     <div class="card level-card level-info">
                                         <div class="card-header">
 
@@ -29,11 +29,11 @@
                                     </div>
                                 </div>
 
-                               <div class="col-md-4 col-sm-6 mb-3">
+                               <div class="col-md-2 col-sm-1 mb-1">
                                     <div class="card level-card level-warning">
                                         <div class="card-header">
 
-                                            <a href="{{ route('admin.administration.machine.index') }}" class="color_white">
+                                            <a href="{{ route('admin.administration.exercice.index') }}" class="color_white">
                                                 <span class="level-icon"><i class="phpdebugbar-fa phpdebugbar-fa-bolt"></i></span> Exercices
                                             </a>
                                         </div>
@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
 
-                               <div class="col-md-4 col-sm-6 mb-3">
+                               <div class="col-md-2 col-sm-1 mb-1">
                                     <div class="card level-card level-error">
                                         <div class="card-header">
 
@@ -57,7 +57,7 @@
                                     </div>
                                 </div>                                
 
-                                <div class="col-md-4 col-sm-6 mb-3">
+                                <div class="col-md-2 col-sm-1 mb-1">
                                     <div class="card level-card level-critical">
                                         <div class="card-header">
                                             <a href="{{ route('admin.administration.machine.index') }}" class="color_white">
@@ -70,7 +70,7 @@
                                     </div>
                                 </div>   
 
-                                <div class="col-md-4 col-sm-6 mb-3">
+                                <div class="col-md-2 col-sm-1 mb-1">
                                     <div class="card level-card level-notice">
                                         <div class="card-header">
                                             <a href="{{ route('admin.administration.machine.index') }}" class="color_white">
@@ -101,7 +101,7 @@
                         <div>
                             <div class="row">
                                 @foreach ($groupes_musculaires as $groupe_musculaire => $value)
-                                <div class="col-md-3 mb-3">
+                                <div class="col-sm-1 mb-3" style="flex:10%;max-width:10%">
                                     <div class="card">
                                         <div class="card-header">
                                             {{$value["nom"]}}

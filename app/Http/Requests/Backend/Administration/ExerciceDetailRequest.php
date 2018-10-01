@@ -5,9 +5,9 @@ namespace App\Http\Requests\Backend\Administration;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
- * Class MachineRequest.
+ * Class ExerciceDetailRequest.
  */
-class MachineRequest extends FormRequest
+class ExerciceDetailRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,7 +27,12 @@ class MachineRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nom' => 'required|max:100',
+            'description' => 'required',
+            'nombre_series' => 'required|integer|max:10',
+            'recuperation' => 'required|integer|max:1000',
+            'id_machines' => 'required',
+            'id_groupes_musculaires' => 'required',
         ];
     }
 }

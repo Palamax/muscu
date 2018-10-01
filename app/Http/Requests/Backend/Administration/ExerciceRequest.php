@@ -5,9 +5,9 @@ namespace App\Http\Requests\Backend\Administration;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
- * Class MachineRequest.
+ * Class ExerciceRequest.
  */
-class MachineRequest extends FormRequest
+class ExerciceRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

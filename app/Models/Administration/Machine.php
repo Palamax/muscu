@@ -22,4 +22,13 @@ class Machine extends Model
      * @var array
      */
     protected $fillable = ['nom', 'image', 'description', 'active'];
+
+        //Primary key
+    public $primaryKey = 'id';
+    //Timestamps
+    public $timestamps = true;
+
+    public function exercices(){
+        return $this->hasMany('App\Models\administration\Exercice');
+    }
 }

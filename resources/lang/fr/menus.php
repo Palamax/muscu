@@ -49,8 +49,8 @@ return [
             ],
             'exercices' => [
                 'all'        => 'Toutes les exercices',
-                'create'     => 'Créer une exercice',
-                'edit'       => 'Éditer une exercice',
+                'create'     => 'Créer un exercice',
+                'edit'       => 'Éditer un exercice',
                 'management' => 'Gestion des exercices',
                 'main'       => 'Exercices',
             ],    

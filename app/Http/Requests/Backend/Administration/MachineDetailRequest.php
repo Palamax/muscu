@@ -5,7 +5,7 @@ namespace App\Http\Requests\Backend\Administration;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
- * Class ManageRoleRequest.
+ * Class MachineDetailRequest.
  */
 class MachineDetailRequest extends FormRequest
 {

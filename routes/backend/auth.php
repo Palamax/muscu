@@ -77,4 +77,11 @@ Route::group([
     Route::group(['namespace' => 'Machine'], function () {
         Route::resource('machine', 'MachineController', ['except' => ['show']]);
     });
+
+    /*
+     * Exercice Management
+     */
+    Route::group(['namespace' => 'Exercice'], function () {
+        Route::resource('exercice', 'ExerciceController', ['except' => ['show']]);
+    });    
 });
