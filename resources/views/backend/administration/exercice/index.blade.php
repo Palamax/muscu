@@ -41,7 +41,7 @@
                             <tr>
                                 <td>{{$exercice->nom}}</td>
                                 <td>{{$exercice->description}}</td>
-                                <td>A faire</td>
+                                <td>{{$exercice->machine->nom}}</td>
                                 <td>{{$exercice->nomGroupeMusculaire()}} <img style="max-width: 5%" src="{{$exercice->imageGroupeMusculaire()}}"></td>
                                 <td>{{$exercice->updated_at->diffForHumans()}}</td>
                                 <td>

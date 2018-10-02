@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Exercice extends Model
 {
+
     /**
      * The database table used by the model.
      *
@@ -28,8 +29,8 @@ class Exercice extends Model
      */
     protected $fillable = ['nom', 'description', 'id_machines', 'recuperation', 'nombre_series', 'id_groupes_musculaires'];
 
-    public function machine(){
-        return $this->belongsTo('App\Models\administration\Machine');
+    public function machine() {
+        return $this->belongsTo(Machine::class, 'id_machines');
     }
 
     public function nomGroupeMusculaire(){

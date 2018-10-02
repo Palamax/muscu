@@ -3,6 +3,7 @@
 namespace App\Models\Administration;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\administration\Exercice;
 
 /**
  * Class Machine.
@@ -29,6 +30,6 @@ class Machine extends Model
     public $timestamps = true;
 
     public function exercices(){
-        return $this->hasMany('App\Models\administration\Exercice');
+        return $this->hasMany(Exercice::class);
     }
 }

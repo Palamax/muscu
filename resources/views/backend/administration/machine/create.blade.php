@@ -42,15 +42,9 @@
                         {{ html()->label(__('labels.backend.administration.machine.description'))
                             ->class('col-md-2 form-control-label')
                             ->for('description') }}
-
                         <div class="col-md-10">
-                            {{ html()->text('description')
-                                ->class('form-control')
-                                ->placeholder(__('labels.backend.administration.machine.description'))
-                                ->attribute('maxlength', 191)
-                                ->required()
-                                ->autofocus() }}
-                        </div><!--col-->
+                            <textarea class="form-control" id="description" name="description"></textarea>
+                        </div><!--col-->    
                     </div><!--form-group-->
                 </div><!--col-->
             </div><!--row-->            

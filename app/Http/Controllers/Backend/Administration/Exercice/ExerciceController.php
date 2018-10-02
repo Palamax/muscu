@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend\Administration\Exercice;
 
+use App\Models\Auth\User;
 use App\Models\Administration\Exercice;
 use App\Repositories\Backend\Administration\ExerciceRepository;
 use App\Http\Controllers\Controller;
@@ -35,6 +36,8 @@ class ExerciceController extends Controller
      */
     public function index(ExerciceRequest $request)
     {
+        $exos = Exercice::find(2)->machine;
+
         $exercices = Exercice::orderBy('nom','asc')->get();
 
         return view('backend.administration.exercice.index')
