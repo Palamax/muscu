@@ -58,7 +58,10 @@ return [
             ],   
             'exercices' => [
                 'update_error'      => 'Un problème est survenu lors de la mise à jour de l exercice. Veuillez réessayer.',
-            ],                 
+            ],
+            'seances' => [
+                'update_error'      => 'Un problème est survenu lors de la mise à jour de la séance. Veuillez réessayer.',
+            ],                               
         ],   
     ],
 

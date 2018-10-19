@@ -36,8 +36,6 @@ class ExerciceController extends Controller
      */
     public function index(ExerciceRequest $request)
     {
-        $exos = Exercice::find(2)->machine;
-
         $exercices = Exercice::orderBy('nom','asc')->get();
 
         return view('backend.administration.exercice.index')

@@ -1,0 +1,49 @@
+pour la création d'un fonctionnalité Liste et detail (creation et modification).
+Fonctionnalité <NomObjet> (exemple : Machine)
+
+1-Creation table <NomObjet>s (database/migration).
+
+
+2-faire le migrate
+php artisan migrate
+
+3-création du model (dans app\Models)
+php artisan make:model Models\Administration\<NomObjet>
+
+4-Création du controleur (app\Http\Controllers)
+Copier machineControleur qui contient toutes les méthodes sauf show)
+php artisan make:controller Backend\Administration\<NomObjet>\<NomObjet>Controller
+
+5-Création du route (routes)
+ajouter dans le bon group
+Route::group(['namespace' => '<NomObjet>'], function () {
+     Route::resource('<NomObjet>', '<NomObjet>Controller', ['except' => ['show']]);
+}); 
+
+5b - créer un breadcrumbs lié au <NomObjet> (routes\breadcrumbs)
+Rajouter un require dans le breadcrumb parent.
+
+6-Création des requests (app\Http\Requests)
+-pour la liste : <NomObjet>Request
+php artisan make:request Backend\Administration\<NomObjet>Request
+-pour le detail : <NomObjet>DetailRequest 
+php artisan make:request Backend\Administration\<NomObjet>DetailRequest
+
+7-Création du repository (app\Repositories)
+
+8-Labels (resources\lang\fr)
+Ajouter un label dans exceptions.php concernant l'update_error du <NomObjet>s concerné.
+Ajouter les labels des views dans labels.php concernant <NomObjet>s. 
+Ajouter des labels dans alerts.php concernant la création, la mise à jour et la suppression de <NomObjet>s concerné.
+
+9-création des views : 
+index.blade.php  (liste)
+create.blade.php (création)
+edit.blade.php   (modification)
+
+
+
+MENU :
+1-Ajouter des labels dans menus.php
+2-Modifier views\backend\include\sidebar.blade.php
+

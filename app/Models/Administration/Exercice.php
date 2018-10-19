@@ -3,6 +3,7 @@
 namespace App\Models\Administration;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\administration\Seance;
 
 /**
  * Class Exercice.
@@ -61,5 +62,9 @@ class Exercice extends Model
             }
         }
         return '';
-    }    
+    }  
+
+    public function seances(){
+        return $this->belongsToMany(Seance::class, 'seances_exercices', 'id_exercices');
+    }  
 }

@@ -32,6 +32,12 @@ return [
             'updated' => 'Exercice mise à jour avec succès.',
         ],  
 
+        'seances' => [
+            'created' => 'Séance créée avec succès.',
+            'deleted' => 'Séance supprimée avec succès.',
+            'updated' => 'Séance mise à jour avec succès.',
+        ],  
+
         'users' => [
             'cant_resend_confirmation' => "L'application est actuellement paramétrée avec une validation manuelle des utilisateurs.",
             'confirmation_email'  => "Un email de confirmation a été adressé à l'adresse indiquée.",

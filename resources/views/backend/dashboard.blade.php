@@ -38,7 +38,7 @@
                                             </a>
                                         </div>
                                         <div class="card-body">
-                                            18 Exercices enregistrées
+                                            {{ $nbExercices }} Exercice(s) enregistré(s)
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                             </a>
                                         </div>
                                         <div class="card-body">
-                                            5 Séances enregistrées
+                                            {{ $nbSeances }} Séance(s) enregistrée(s)
                                         </div>
                                     </div>
                                 </div>                                

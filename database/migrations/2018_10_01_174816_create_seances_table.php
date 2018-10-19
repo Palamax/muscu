@@ -5,9 +5,9 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 /**
- * Class CreateMachineTable.
+ * Class CreateSeancesTable.
  */
-class CreateMachineTable extends Migration
+class CreateSeancesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,12 +16,10 @@ class CreateMachineTable extends Migration
      */
     public function up()
     {
-        Schema::create('machines', function (Blueprint $table) {
+        Schema::create('seances', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nom')->nullable();
-            $table->text('description')->nullable();
-            $table->boolean('active')->default(true);
-            $table->string('image')->nullable();
+            $table->string('nom');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ class CreateMachineTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('machines');
+        Schema::dropIfExists('seances');
     }
 }

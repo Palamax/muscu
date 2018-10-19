@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/machine')) }}" href="{{ route('admin.administration.machine.index') }}">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/seance')) }}" href="{{ route('admin.administration.seance.index') }}">
                     <i class="phpdebugbar-fa phpdebugbar-fa-tasks"></i> @lang('menus.backend.sidebar.seances')
                 </a>
             </li>                                 

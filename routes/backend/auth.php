@@ -83,5 +83,16 @@ Route::group([
      */
     Route::group(['namespace' => 'Exercice'], function () {
         Route::resource('exercice', 'ExerciceController', ['except' => ['show']]);
-    });    
+    });   
+
+    /*
+     * Exercice Seance
+     */
+    Route::group(['namespace' => 'Seance'], function () {
+        Route::resource('seance', 'SeanceController', ['except' => ['show']]);
+
+        Route::get('seance/ajouterExercice/{seance}', 'SeanceController@ajouterExercice')->name('seance.ajouterExercice'); 
+    });
+
+       
 });
